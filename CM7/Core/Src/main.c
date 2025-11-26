@@ -21,7 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "core_cm7.h"
+#include "common.h"
+#include "app.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -77,6 +79,12 @@ static void MX_TIM13_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+// SWV ITM
+int __io_putchar(uint8_t ch)
+{
+  return ITM_SendChar(ch);
+}
 
 /* USER CODE END 0 */
 
