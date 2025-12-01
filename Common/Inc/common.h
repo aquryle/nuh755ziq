@@ -9,11 +9,14 @@
 #ifndef INC_COMMON_H_
 #define INC_COMMON_H_
 
-
 #include <stdint.h>
 #include <stdbool.h>
 #include <stddef.h>
-#include <stdio.h>
+
+#define AUDIO_CHANNEL_NUM	(2)
+#define WAVE_BUFFER_SIZE	(480 * AUDIO_CHANNEL_NUM)
+
+
 
 #define BIT0	 (1ul << 0)
 #define BIT1	 (1ul << 1)
@@ -48,5 +51,14 @@
 #define BIT30	 (1ul << 30)
 #define BIT31	 (1ul << 31)
 
+typedef enum {
+	NOTE_A0 = 0,
+	NOTE_B0 = 0,
+	NOTE_C0 = 0,
+	NOTE_D0 = 0,
+	NOTE_E0 = 0,
+	NOTE_F0 = 0,
+	NOTE_G0 = 0,
+} Note_t;
 
 #endif /* INC_COMMON_H_ */

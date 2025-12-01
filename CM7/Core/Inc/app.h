@@ -11,4 +11,6 @@
 
 #include "common.h"
 
+extern void app(void);
+
 #endif /* INC_APP_H_ */

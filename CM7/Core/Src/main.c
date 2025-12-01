@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "core_cm7.h"
+#include <stdio.h>
 #include "common.h"
 #include "app.h"
 /* USER CODE END Includes */
@@ -64,7 +65,8 @@ SAI_HandleTypeDef hsai_BlockA1;
 TIM_HandleTypeDef htim13;
 
 /* USER CODE BEGIN PV */
-
+/* __attribute__((section(".wave_buffer"))) */
+int16_t WaveBuffer[WAVE_BUFFER_SIZE] = {0};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -188,6 +190,7 @@ Error_Handler();
       BSP_LED_Toggle(LED_YELLOW);
       BSP_LED_Toggle(LED_RED);
       /* ..... Perform your action ..... */
+      printf("Hello, from CM7\n");
     }
     /* USER CODE END WHILE */
 
