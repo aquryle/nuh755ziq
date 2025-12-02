@@ -59,6 +59,16 @@ extern int __io_putchar(uint8_t ch);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define TFT_CS_Pin GPIO_PIN_1
+#define TFT_CS_GPIO_Port GPIOB
+#define TFT_RST_Pin GPIO_PIN_2
+#define TFT_RST_GPIO_Port GPIOB
+#define TFT_DC_Pin GPIO_PIN_11
+#define TFT_DC_GPIO_Port GPIOF
+#define SD_CS_Pin GPIO_PIN_14
+#define SD_CS_GPIO_Port GPIOF
+#define TFT_BL_Pin GPIO_PIN_15
+#define TFT_BL_GPIO_Port GPIOF
 
 /* USER CODE BEGIN Private defines */
 

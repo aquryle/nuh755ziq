@@ -30,6 +30,7 @@
     "doxdocgen.c.lastLine": "*******************************************************************************/",
     "files.associations": {
         "wave.h": "c",
-        "common.h": "c"
+        "common.h": "c",
+        "math.h": "c"
     },
 }
