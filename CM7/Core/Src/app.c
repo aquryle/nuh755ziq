@@ -102,6 +102,7 @@ void waveGeneration(Note_t note)
 }
 
 
+
 void test(void)
 {
 	uint32_t tick = HAL_GetTick();
